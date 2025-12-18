@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact | Gabiyell</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<nav>
+  <h1>Gabiyell</h1>
+  <div>
+    <a href="index.html">Home</a>
+    <a href="gallery.html">Galeri</a>
+    <a href="upload.html">Upload</a>
+    <a href="contact.html">Contact</a>
+  </div>
+</nav>
+
+<section>
+  <h2>Contact & Customer Service</h2>
+
+  <p>
+    Jika kamu memiliki pertanyaan, saran, atau ingin bekerja sama,
+    silakan hubungi saya melalui kontak di bawah ini.
+  </p>
+
+  <div class="contact-box">
+    <p>📧 <strong>Email</strong> : gabiyell@email.com</p>
+    <p>📱 <strong>WhatsApp</strong> : 08xxxxxxxx</p>
+    <p>📷 <strong>Instagram</strong> : @gabiyell</p>
+  </div>
+</section>
+
+<section>
+  <h2>Kirim Pesan</h2>
+
+  <form onsubmit="sendMessage(event)">
+    <input type="text" id="name" placeholder="Nama kamu" required>
+    <input type="email" id="email" placeholder="Email kamu" required>
+    <textarea id="message" placeholder="Tulis pesan..." required></textarea>
+    <button type="submit">Kirim Pesan</button>
+  </form>
+</section>
+
+<div class="music-player">
+  <button onclick="prevMusic()">⏮</button>
+  <button onclick="togglePlay()">▶️ / ⏸</button>
+  <button onclick="toggleMute()" id="muteBtn">🔊</button>
+  <button onclick="nextMusic()">⏭</button>
+</div>
+
+<script src="js/script.js"></script>
+
+<script>
+function sendMessage(e) {
+  e.preventDefault();
+  alert("Terima kasih! Pesan kamu sudah dikirim 😊");
+  e.target.reset();
+}
+</script>
+
+</body>
+</html>

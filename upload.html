@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Upload</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<nav><h1>Upload Foto</h1></nav>
+
+<section>
+  <input type="file" id="photoInput" accept="image/*">
+  <input type="text" id="captionInput" placeholder="Caption">
+  <select id="categoryInput">
+    <option>Umum</option>
+    <option>Liburan</option>
+    <option>Keluarga</option>
+    <option>Pribadi</option>
+  </select>
+  <button onclick="uploadPhoto()">Upload</button>
+</section>
+
+<script src="js/script.js"></script>
+</body>
+</html>
