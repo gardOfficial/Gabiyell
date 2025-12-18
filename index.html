@@ -3,10 +3,41 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Gabiyell</title>
+  <title>Gabiyell AI Gallery</title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- PWA -->
+  <link rel="manifest" href="manifest.json">
 </head>
 <body>
-  <h1>Gabiyell AI Gallery</h1>
-  <p>Website berhasil online 🎉</p>
+
+<nav class="navbar">
+  <h1>Gabiyell</h1>
+  <div class="nav-menu">
+    <a href="index.html">Home</a>
+    <a href="gallery.html">Galeri</a>
+    <a href="upload.html">Upload</a>
+    <a href="contact.html">Contact</a>
+  </div>
+</nav>
+
+<section class="hero">
+  <h2>Gabiyell AI Smart Gallery</h2>
+  <p>
+    Website galeri foto pintar dengan desain AI-style, musik latar,
+    upload foto, dan siap dijadikan aplikasi Android (APK).
+  </p>
+</section>
+
+<div class="music-player">
+  <button onclick="prevMusic()">⏮</button>
+  <button onclick="togglePlay()">▶️ / ⏸</button>
+  <button onclick="toggleMute()" id="muteBtn">🔊</button>
+  <button onclick="nextMusic()">⏭</button>
+</div>
+
+<script src="js/script.js"></script>
 </body>
 </html>
